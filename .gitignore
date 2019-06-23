@@ -1,7 +1,7 @@
 ### Java template
 # Compiled class file
 
-## .idea,*.iml, target ignore idea and maven files
+## .idea,*.iml, target ignore idea and maven files, 下面这三个文件不需要存储在repo中
 *.class
 .idea
 *.iml
