@@ -29,6 +29,9 @@ public class Product {
     }
 
     @Override
+    /**
+     * 重写tostring方法，打印id和name
+     */
     public String toString() {
         return "Product{" +
                 "id='" + id + '\'' +
