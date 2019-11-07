@@ -13,6 +13,9 @@
         <module>provider</module>
         <module>consumer</module>
         <module>api_gateway</module>
+        <module>cloud_config</module>
+        <module>h2_demo</module>
+        <module>../testcode</module>
     </modules>
 
     <!-- 引入 Spring Cloud 的依赖，管理 Spring Cloud 各组件 -->
@@ -68,9 +71,12 @@
         </dependency>
     </dependencies>
 
-
-
-
-
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

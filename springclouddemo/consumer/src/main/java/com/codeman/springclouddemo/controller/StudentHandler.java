@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Collection;
+import java.util.*;
 
 @RequestMapping("/consumer")
 @RestController
@@ -37,5 +37,21 @@ public class StudentHandler {
     @DeleteMapping("/deleteById/{id}")
     public void deleteById(@PathVariable("id") long id) {
         restTemplate.delete("http://localhost:8010/student/deleteById/{id}", id);
+    }
+
+    public static void main(String[] args) {
+        Deque<String> queue = new ArrayDeque<>();
+        Map<String, String> map = new HashMap<>();
+        for (String s : queue) {
+
+        }
+        queue.add("1");
+        queue.add("2");
+        queue.push("3");
+        queue.pop();
+        int head = (0 - 1) & (16 - 1);
+
+        System.out.println(head);
+
     }
 }

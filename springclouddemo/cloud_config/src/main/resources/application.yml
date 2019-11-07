@@ -1,0 +1,20 @@
+server:
+    port: 8040
+spring:
+    application:
+        name: cloud_config
+    profiles:
+        active: native
+    cloud:
+        config:
+           server:
+               native:
+                   search-locations: file:D:/code_study/spring-cloud-config-repository
+#              git:
+#                  uri: https://github.com/QinZhanlong/spring-cloud-config-repository
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+    instance:
+        prefer-ip-address: true
